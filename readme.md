@@ -2,8 +2,9 @@
 ![count all the git commits](https://github.com/ericduran/drupalcores/raw/pystart/img.jpg)
 
 
-Ruby script to parse all the git commit, aggregate every users commit count and generate
-a flat html page for easy viewing for all the contributes and commit counts.
+Node.js script to parse all the git commit, aggregate every users commit count and generate
+a json file with all the contributes and commit counts.
+In the gh-pages branch is a angular js page with shows the json file.
 
 ## Instructions
 First you need to clone a copy of the drupal 8 branch into your drupalcores directory
@@ -11,9 +12,9 @@ First you need to clone a copy of the drupal 8 branch into your drupalcores dire
     git clone --branch 8.x http://git.drupal.org/project/drupal.git
     git clone --branch gh-pages git@github.com:ericduran/drupalcores.git pages
 
-Once you have a git repo of drupal core in the drupal directory then you can run the cores.rb script
+Once you have a git repo of drupal core in the drupal directory then you can run the update.js script
 
-    ./cores.rb
+    node update.js
 
 For the company list do:
 
